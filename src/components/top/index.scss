@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.top {
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  background: $theme-gradient;
+
+  .link {
+    display: inline-block;
+    font-size: 28px;
+    padding-top: 8px;
+    color: $top-header-text-color;
+    opacity: 1;
+    margin-left: 20px;
+    font-family: 'Catamaran';
+    font-weight: 800;
+  }
+
+  .home-header {
+    margin-top: 0;
+    border-bottom: none;
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .home-link {
+    box-shadow: none;
+    text-decoration: none;
+    color: inherit;
+  }
+}
