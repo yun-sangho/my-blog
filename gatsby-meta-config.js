@@ -1,8 +1,8 @@
 module.exports = {
   title: `Sangho's Blog`,
-  description: `Blog posted about ...`,
+  description: `The blog written by Yun Sangho.`,
   author: `Yun Sangho`,
-  introduction: `write what I think interesting.`,
+  introduction: `write about what makes me interesting.`,
   siteUrl: `https://yunsangho.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
@@ -14,7 +14,7 @@ module.exports = {
   icon: `content/assets/logo.png`, // Add your favicon
   keywords: [`blog`],
   comment: {
-    disqusShortName: 'yunsangho', // Your disqus-short-name. check disqus.com.
+    disqusShortName: 'sanghos-blog', // Your disqus-short-name. check disqus.com.
     utterances: '', // Your repository for archive comment
   },
   configs: {
