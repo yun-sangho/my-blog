@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 // import { GitHubIcon } from '../social-share/github-icon'
 import { Bio } from '../bio'
-import { ThemeSwitch } from '../theme-switch'
 
 import { rhythm } from '../../utils/typography'
 
@@ -32,7 +31,6 @@ export const Top = ({ title, location, rootPath }) => {
             </Link>
           </h1>
           <Bio />
-          <ThemeSwitch />
         </div>
       )}
       {/* <GitHubIcon /> */}

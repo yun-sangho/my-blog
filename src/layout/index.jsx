@@ -3,7 +3,7 @@ import React from 'react'
 import { Top } from '../components/top'
 import { Footer } from '../components/footer'
 import { rhythm } from '../utils/typography'
-
+import { ThemeSwitch } from '../components/theme-switch'
 import './index.scss'
 
 export const Layout = ({ location, title, children }) => {
@@ -21,6 +21,7 @@ export const Layout = ({ location, title, children }) => {
           paddingTop: '20px'
         }}
       >
+        <ThemeSwitch />
         {children}
         <Footer />
       </div>
