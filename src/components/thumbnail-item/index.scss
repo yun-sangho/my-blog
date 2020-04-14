@@ -2,40 +2,48 @@
 
 .thumbnail {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   padding: 4px;
-  padding-bottom: 12px;
   box-shadow: none;
   transition: text-shadow 0.3s, opacity 0.4s;
   opacity: 0;
 
-  p {
-    font-size: 90%;
-    line-height: 1.4;
+  .thumbnail-box {
+    display: flex;
+    width: 100%;
+    padding: 0 0 10px 0;
   }
 
-  // .thumbnail-box {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   width: 100%;
-  //   justify-content: space-between;
-  //   padding: 10px;
-  // }
+  .thumbnail-text {
+    flex: 1 1 0;
+    margin-right: 2em;
+  }
 
-  // .thumbnail-title {
-  //   margin: 0;
-  //   padding: 0;
-  //   margin-bottom: 10px;
-  // }
+  .thumbnail-title {
+    display: inline;
+  }
 
-  // .thumbnail-description {
-  //   margin: 0;
-  //   padding: 0;
-  // }
+  .thumbnail-description {
+    font-size: 0.8rem;
+  }
 
-  // .thumbnail-image {
-  //   width: 100px;
-  // }
+  .thumbnail-date {
+    font-size: 0.65rem;
+    font-style: italic;
+  }
+
+  .thumbnail-image {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .thumbnail-hr {
+    background: $theme-gradient;
+    border: none;
+  }
 }
 
 .thumbnail.visible {
