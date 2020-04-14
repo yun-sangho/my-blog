@@ -34,6 +34,8 @@ export default ({ data, location }) => {
   const { countOfInitialPost } = siteMetadata.configs
   const posts = data.allMarkdownRemark.edges
   const categories = _.uniq(posts.map(({ node }) => node.frontmatter.category))
+  console.log(data.site)
+  console.log(siteMetadata)
 
   useEffect(() => {
     window.addEventListener(`scroll`, onScroll, { passive: false })
@@ -95,6 +97,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        keywords
         configs {
           countOfInitialPost
         }

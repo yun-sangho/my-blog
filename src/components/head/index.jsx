@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 export function Head({ description, lang, meta, keywords, title }) {
+  console.log(keywords)
   return (
     <StaticQuery
       query={detailsQuery}
