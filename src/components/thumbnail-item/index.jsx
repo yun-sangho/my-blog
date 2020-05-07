@@ -15,7 +15,7 @@ export const ThumbnailItem = ({ node }) => {
           <h3 className='thumbnail-title'>{node.frontmatter.title || node.fields.slug}</h3>
           <p className='thumbnail-description' dangerouslySetInnerHTML={{ __html: node.frontmatter.description || node.excerpt }} />
         </div>
-        <div className='thumbnail-image' style={{backgroundImage: `url(${thumbnail.childImageSharp.fixed.src})`}} />
+        {thumbnail && (<div className='thumbnail-image' style={{backgroundImage: `url(${thumbnail.childImageSharp.fixed.src})`}} />) }
       </div>
       <p className='thumbnail-date'>{node.frontmatter.date}</p>
       <hr className='thumbnail-hr' />
