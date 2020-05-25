@@ -8,19 +8,19 @@ draft: false
 ---
 최근 코딩을 하다 dom element와 dom node의 차이점을 제대로 알지 못해서 어려움을 겪었다. 이에 dom interface에 관해 간단히 글로 정리해본다.
 
-# DOM Interface란?
+## DOM Interface란?
 
 - html, xml 문서를 프로그래밍 언어로 쉽게 조작할 수 있도록 **object 모델을 활용해 tree 구조**로 나타낸 것
 - dom은 javascript와 독립적이다. javascript는 DOM을 다룰 수 있는 여러 프로그래밍 언어 중에 하나이다.
 - broswer DOM API = DOM + Javascript
 
-# DOM의 구성요소
+## DOM의 구성요소
 
-## Node
+### Node
 - **dom을 구성하는 객체**들을 통칭하여 node라고 부른다.
 - node에는 다양한 type이 존재하는데 특히 자주 접하는 type으로는 element, document, text 등이 있다.
 
-## Document
+### Document
 - dom tree의 **최상단** node이다.
 - dom tree의 다른 node들은 모두 document node의 자식으로 존재한다.
 
@@ -31,15 +31,15 @@ draft: false
 * broswer의 tab 마다 고유한 window 객체를 가진다.
 * document node도 window 객체의 property이다.
 
-## Element
+### Element
 - **tag**들은 element node로 표현된다.
 - element node의 자식으로 다른 node들이 존재할 수 있다.
 
-## Text
+### Text
 - **문자**로 이루어진 내용들은 dom에서 text node로 표현된다.
 - tag 내부에 문자가 존재한다면 tag element node의 자식 text node로 표현된다.
 
-# Example
+## Example
 ```html
 <html>
 <head>
@@ -54,7 +54,7 @@ draft: false
 </body>
 </html>
 ```
-## 위의 html은 어떤 dom 구조를 가지고 있을까?
+#### 위의 html은 어떤 dom 구조를 가지고 있을까?
 
 ![example](./images/dom-example.png)
 
